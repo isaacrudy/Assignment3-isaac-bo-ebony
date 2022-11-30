@@ -3,10 +3,12 @@
 //
 #include <stdio.h>
 
+#include "input.h"
 #include "linked_lists.h"
 
 int main(int argc, char **argv) {
     int option = 0;
+    struct node root;
 
     while (option != 5) {
         printf("\nPlease select an option:\n");
@@ -18,7 +20,7 @@ int main(int argc, char **argv) {
         scanf("%d", &option);
 
         if (option == 1) {
-
+            root = input();
         } else if (option == 2) {
 
         } else if (option == 3) {
