@@ -17,7 +17,18 @@ int main(int argc, char **argv) {
                "5. Exit the program\n");
         scanf("%d", &option);
 
+        if (option == 1) {
 
+        } else if (option == 2) {
+
+        } else if (option == 3) {
+
+        } else if (option == 4) {
+
+        } else if (option > 5 || option < 1) {
+            printf("Invalid Entry");
+            continue;
+        }
     }
 
     printf("Exiting Program...");
