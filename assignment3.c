@@ -6,6 +6,17 @@
 #include "input.h"
 #include "linked_lists.h"
 
+
+/**
+ * This method asks the user to select an option
+ * to either load an input file into a linked list, merge holes
+ * in the linked list, compact the linked list, print the linked list
+ * or exit the program.
+ *
+ * @param argc unused
+ * @param argv unused
+ * @return 0 if the program ran without faults
+ */
 int main(int argc, char **argv) {
     int option = 0;
     struct node root;
@@ -27,11 +38,13 @@ int main(int argc, char **argv) {
 
         } else if (option == 4) {
 
-        } else if (option > 5 || option < 1) {
+        } else if (option != 5) {
             printf("Invalid Entry");
             continue;
         }
     }
 
     printf("Exiting Program...");
+
+    return 0;
 }
